@@ -1,0 +1,30 @@
+{
+  "passGoBonus": 200,
+  "startMoney": 1500,
+  "players": [
+    {
+      "name": "Nico",
+      "color": "#ff8826",
+      "money": 1900,
+      "picked": false
+    },
+    {
+      "name": "Lauti",
+      "color": "#215ed5",
+      "money": 1500,
+      "picked": false
+    },
+    {
+      "name": "Mati",
+      "color": "#8c248f",
+      "money": 1100,
+      "picked": true
+    },
+    {
+      "name": "Nola",
+      "color": "#084a9f",
+      "money": 1500,
+      "picked": false
+    }
+  ]
+}
