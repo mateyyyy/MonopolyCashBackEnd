@@ -1,11 +1,15 @@
 import express from "express";
 import {
+  cobrarBanco,
   configGame,
   getConfig,
   getPlayerInfo,
+  getTransfers,
   pickPlayer,
+  responderCobroBanco,
   transferMoney,
   unpickPlayer,
+  verificarCobroBancoPendiente,
 } from "./controller/config.js";
 import cors from "cors";
 const app = express();
@@ -29,3 +33,7 @@ app.post("/config/pick", pickPlayer);
 app.post("/config/unpick", unpickPlayer);
 app.post("/transfer", transferMoney);
 app.get("/player/:name", getPlayerInfo);
+app.get("/transfers", getTransfers);
+app.post("/receive", cobrarBanco);
+app.get("/requests/:playerName", verificarCobroBancoPendiente);
+app.post("/requestsRespond", responderCobroBanco);

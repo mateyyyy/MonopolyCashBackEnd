@@ -1,0 +1,80 @@
+[
+  {
+    "from": "Banco",
+    "to": "Mati",
+    "amount": 1500,
+    "timestamp": "2025-07-15T23:06:02.682Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Mati",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:06:51.415Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:07:59.874Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:08:02.469Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:08:49.568Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 1500,
+    "timestamp": "2025-07-15T23:08:52.910Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 1508,
+    "timestamp": "2025-07-15T23:12:52.388Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 99999,
+    "timestamp": "2025-07-15T23:12:56.746Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:15:09.697Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:15:28.736Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:15:32.416Z"
+  },
+  {
+    "from": "Banco",
+    "to": "nico",
+    "amount": 200,
+    "timestamp": "2025-07-16T00:10:52.631Z"
+  },
+  {
+    "from": "Banco",
+    "to": "Negro",
+    "amount": 5800,
+    "timestamp": "2025-07-16T00:11:16.990Z"
+  }
+]

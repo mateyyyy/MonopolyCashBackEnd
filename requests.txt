@@ -1,0 +1,225 @@
+[
+  {
+    "id": "md56l2a9cwqqpc",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:46:11.793Z",
+    "acceptedBy": [],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56p6mq774686",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:49:24.050Z",
+    "acceptedBy": [],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56piw0tpyxvr",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:49:39.936Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56wkloscsl2t",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:55:08.748Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56wvlyt78yhl",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:55:23.014Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56xhya10rcqf",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:55:51.970Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56xmqh5gaw4k",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:55:58.169Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56xtpz7let2k",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:56:07.223Z",
+    "acceptedBy": [
+      "Lauti"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true
+    }
+  },
+  {
+    "id": "md56y9yoe7b3hg",
+    "to": "Mati",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:56:28.272Z",
+    "acceptedBy": [],
+    "status": "completed",
+    "responses": {
+      "Mati": false
+    }
+  },
+  {
+    "id": "md56yga803jq1t",
+    "to": "Lauti",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:56:36.464Z",
+    "acceptedBy": [
+      "Mati"
+    ],
+    "status": "completed",
+    "responses": {
+      "Mati": true
+    }
+  },
+  {
+    "id": "md571oz52sik1i",
+    "to": "Mati",
+    "amount": 200,
+    "timestamp": "2025-07-15T23:59:07.697Z",
+    "acceptedBy": [
+      "Lauti",
+      "Negro",
+      "nico"
+    ],
+    "status": "completed",
+    "responses": {
+      "Mati": true,
+      "Lauti": true,
+      "Negro": true,
+      "nico": true
+    }
+  },
+  {
+    "id": "md576en3ys4jjh",
+    "to": "Mati",
+    "amount": 200,
+    "timestamp": "2025-07-16T00:02:47.583Z",
+    "acceptedBy": [
+      "Lauti",
+      "Negro",
+      "nico"
+    ],
+    "status": "completed",
+    "responses": {
+      "Lauti": true,
+      "Negro": true,
+      "nico": true
+    }
+  },
+  {
+    "id": "md579r1ud0nqdl",
+    "to": "nico",
+    "amount": 1200,
+    "timestamp": "2025-07-16T00:05:23.634Z",
+    "acceptedBy": [
+      "Mati",
+      "Lauti",
+      "Negro"
+    ],
+    "status": "completed",
+    "responses": {
+      "Mati": true,
+      "Lauti": true,
+      "Negro": true
+    }
+  },
+  {
+    "id": "md57gj6836tb2m",
+    "to": "nico",
+    "amount": 200,
+    "timestamp": "2025-07-16T00:10:40.016Z",
+    "acceptedBy": [
+      "Mati",
+      "Lauti",
+      "Negro"
+    ],
+    "status": "completed",
+    "responses": {
+      "Mati": true,
+      "Lauti": true,
+      "Negro": true
+    }
+  },
+  {
+    "id": "md57h0gz7nvykz",
+    "to": "Negro",
+    "amount": 5800,
+    "timestamp": "2025-07-16T00:11:02.435Z",
+    "acceptedBy": [
+      "Mati",
+      "Lauti",
+      "nico"
+    ],
+    "status": "completed",
+    "responses": {
+      "Mati": true,
+      "Lauti": true,
+      "nico": true
+    }
+  },
+  {
+    "id": "md57hf95t34o06",
+    "to": "nico",
+    "amount": 14,
+    "timestamp": "2025-07-16T00:11:21.593Z",
+    "acceptedBy": [],
+    "status": "cancelled",
+    "responses": {
+      "Lauti": false,
+      "Mati": false,
+      "Negro": false
+    }
+  }
+]
