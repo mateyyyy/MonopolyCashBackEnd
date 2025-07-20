@@ -11,18 +11,17 @@ export const configGame = (req, res) => {
     return res.status(400).json({ message: "Configuración inválida" });
   }
 
-  // Jugadores normales
   const playersWithExtras = config.players.map((player) => ({
     ...player,
     money: config.startMoney,
     picked: false,
+    bancarrota: false,
   }));
 
-  // Agregar jugador "Banco"
   const banco = {
     name: "Banco",
     money: 99999999999,
-    picked: true, // no seleccionable
+    picked: true,
   };
 
   const newConfig = {
@@ -30,7 +29,6 @@ export const configGame = (req, res) => {
     players: [...playersWithExtras, banco],
   };
 
-  // Guardar configuración
   fs.writeFile("config.txt", JSON.stringify(newConfig, null, 2), (err) => {
     if (err) {
       console.error("Error al guardar configuración:", err);
@@ -39,7 +37,7 @@ export const configGame = (req, res) => {
         .json({ message: "Error al guardar configuración" });
     }
 
-    // Reiniciar transfers.txt
+    // Reiniciar transfers.txt y requests.txt en paralelo
     fs.writeFile("transfers.txt", "[]", (err) => {
       if (err) {
         console.error("Error al reiniciar transfers.txt:", err);
@@ -48,9 +46,19 @@ export const configGame = (req, res) => {
           .json({ message: "Error al reiniciar transfers.txt" });
       }
 
-      res.status(200).json({
-        status: "success",
-        message: "Configuración guardada y transferencias reiniciadas",
+      fs.writeFile("requests.txt", "[]", (err) => {
+        if (err) {
+          console.error("Error al reiniciar requests.txt:", err);
+          return res
+            .status(500)
+            .json({ message: "Error al reiniciar requests.txt" });
+        }
+
+        res.status(200).json({
+          status: "success",
+          message:
+            "Configuración guardada, transferencias y solicitudes reiniciadas",
+        });
       });
     });
   });
@@ -639,5 +647,46 @@ export const verificarCobroBancoPendiente = (req, res) => {
     });
 
     res.json({ status: "success", requests: pendientes });
+  });
+};
+export const declararBancarrota = (req, res) => {
+  const playerName = req.params.name;
+
+  fs.readFile("config.txt", "utf-8", (err, data) => {
+    if (err) {
+      console.error("Error al leer config.txt:", err);
+      return res.status(500).json({ message: "Error al leer configuración" });
+    }
+
+    let config;
+    try {
+      config = JSON.parse(data);
+    } catch (parseErr) {
+      console.error("Error al parsear config.txt:", parseErr);
+      return res
+        .status(500)
+        .json({ message: "Error de formato en configuración" });
+    }
+
+    const playerIndex = config.players.findIndex((p) => p.name === playerName);
+    if (playerIndex === -1) {
+      return res.status(404).json({ message: "Jugador no encontrado" });
+    }
+
+    config.players.splice(playerIndex, 1); // Eliminar jugador
+
+    fs.writeFile("config.txt", JSON.stringify(config, null, 2), (writeErr) => {
+      if (writeErr) {
+        console.error("Error al guardar config.txt:", writeErr);
+        return res
+          .status(500)
+          .json({ message: "Error al guardar configuración" });
+      }
+
+      res.status(200).json({
+        status: "success",
+        message: `Jugador ${playerName} eliminado por bancarrota`,
+      });
+    });
   });
 };

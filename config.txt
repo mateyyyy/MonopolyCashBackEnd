@@ -3,32 +3,22 @@
   "startMoney": 1500,
   "players": [
     {
-      "name": "Mati",
-      "color": "#ff8826",
-      "money": 3200,
-      "picked": false
-    },
-    {
-      "name": "Lauti",
-      "color": "#140639",
-      "money": 106107,
-      "picked": false
-    },
-    {
-      "name": "Negro",
-      "color": "#468d7f",
-      "money": 7700,
-      "picked": true
-    },
-    {
       "name": "nico",
-      "color": "#1eee28",
-      "money": 3300,
-      "picked": false
+      "color": "#ff8826",
+      "money": 1500,
+      "picked": true,
+      "bancarrota": false
+    },
+    {
+      "name": "mati",
+      "color": "#e40c5a",
+      "money": 1700,
+      "picked": false,
+      "bancarrota": false
     },
     {
       "name": "Banco",
-      "money": 99999894092,
+      "money": 99999999999,
       "picked": true
     }
   ]

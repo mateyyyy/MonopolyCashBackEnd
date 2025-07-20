@@ -2,6 +2,7 @@ import express from "express";
 import {
   cobrarBanco,
   configGame,
+  declararBancarrota,
   getConfig,
   getPlayerInfo,
   getTransfers,
@@ -37,3 +38,4 @@ app.get("/transfers", getTransfers);
 app.post("/receive", cobrarBanco);
 app.get("/requests/:playerName", verificarCobroBancoPendiente);
 app.post("/requestsRespond", responderCobroBanco);
+app.patch("/bancarrota/:name", declararBancarrota);
